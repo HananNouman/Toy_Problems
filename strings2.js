@@ -6,7 +6,22 @@
 //  nextItem("testing", "t") # "e"
 
 	function nextItem(items, elem){
-		//your code is here
+		// if (typeof elem =="object"){
+	 //    for (var i = 0; i < items.length; i++) {
+
+  //        if (items[i] == elem) {
+  //          return items[i+1];
+  //         }
+  //           }
+  //       return null;
+  //      }
+
+      
+		if (items.indexOf(elem)<0 || items.indexOf(elem)==items.length-1){
+			return null;
+		}
+		return items[items.indexOf(elem)+1]
+		
 	}
 
 //  We need a function that can transform a number into a string.
@@ -15,5 +30,7 @@
 // 	numberToString(999); // returns '999';`
 
 	function numberToString(num) {
-	  //your code is here
+	  var arr=[];
+	  arr.push(num)
+	  return arr.join("");
 	}
